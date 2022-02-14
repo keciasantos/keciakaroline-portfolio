@@ -1,0 +1,28 @@
+:root {
+  --font-title-text: "Nunito", sans-serif;
+  --font-italic: "Courgette", cursive;
+  --background-primary: #3f415a;
+  --background-body: #282a36;
+  --background-btn: #6a6577;
+  --color-primary-font: #e767b0;
+  --color-secondary-font: rgb(247, 247, 247);
+}
+
+.FooterContact .section-footer {
+  background-color: var(--background-primary);
+  color: var(--color-secondary-font);
+  margin-top: 100px;
+  padding: 90px 300px 50px 300px;
+}
+
+.FooterContact .section-footer h2 {
+  font-weight: 800;
+  font-size: 50px;
+}
+
+.FooterContact .content .project,
+.container-fluid .project {
+  border-radius: 20px;
+  width: 700px;
+  height: 600px;
+}
