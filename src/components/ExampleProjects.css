@@ -1,0 +1,56 @@
+:root {
+  --font-title-text: "Nunito", sans-serif;
+  --font-italic: "Courgette", cursive;
+  --background-primary: #3f415a;
+  --background-body: #282a36;
+  --background-btn: #6a6577;
+  --color-primary-font: #e767b0;
+  --color-secondary-font: rgb(247, 247, 247);
+}
+
+.ExampleProjects .project-description {
+  color: var(--color-secondary-font);
+  margin: 180px 70px;
+}
+
+.ExampleProjects .project-description p {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.ExampleProjects .project-description h2 {
+  font-weight: 800;
+  font-size: 64px;
+}
+
+.ExampleProjects .btn-branding {
+  font-family: var(--font-italic);
+  margin-top: 50px;
+  padding: 20px 25px;
+  background-color: var(--background-btn);
+  color: var(--color-secondary-font);
+  border-radius: 4px;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.ExampleProjects .btn-branding-outline {
+  font-family: var(--font-italic);
+  margin-top: 40px;
+  padding: 20px 25px;
+  /* background-color: var(--color-secondary-font); */
+  color: var(--color-primary-font);
+  border: 1px solid var(--color-primary-font);
+  border-radius: 4px;
+  font-size: 18px;
+}
+
+.ExampleProjects .btn:hover {
+  color: var(--color-secondary-font);
+}
+.content .project,
+.container-fluid .project {
+  border-radius: 20px;
+  width: 700px;
+  height: 600px;
+}
