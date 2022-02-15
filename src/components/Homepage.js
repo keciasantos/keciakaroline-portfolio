@@ -1,6 +1,6 @@
 import react from "react";
 import Navbar from "./Navbar";
-import kecia from "../images/kecia-1.png";
+import profile_1 from "../images/profile_1.png";
 import ExampleProjects from "./ExampleProjects";
 import FooterContact from "./FooterContact";
 import "./Homepage.css";
@@ -12,7 +12,7 @@ export default function Homepage() {
       <div className="heading">
         <div className="container-fluid">
           <div className="row">
-            <div className="col-sm-6">
+            <div className="col-sm-6 introdution">
               <h2>Hi, I am</h2>
               <h1>Kécia Santos</h1>
               <h3 className="font-text mb-5">
@@ -23,12 +23,15 @@ export default function Homepage() {
                 ></span>{" "}
                 Brazilian Front-end developer 👩‍💻 based in Europe
               </h3>
-              <a href="/" className="btn btn-branding">
+              <a
+                href="/src/components/ExampleProjects.js#homepage"
+                className="btn btn-branding"
+              >
                 Get started!
               </a>
             </div>
             <div className="col-sm-6">
-              <img src={kecia} alt="Kécia Santos" className="img-fluid" />
+              <img src={profile_1} alt="Kécia Santos" className="img-fluid" />
             </div>
           </div>
         </div>

@@ -10,12 +10,11 @@ export default function FooterContact() {
             <div className="col-lg-6">
               <h2 className="mb-3">Work Inquiry</h2>
               <p>
-                Are you interested? Let's work together and I'll help you by all
-                my best
+                Are you interested? Let's talk and I'll help you by all my best
               </p>
             </div>
-            <div className="col-lg-6 mt-4 text-center">
-              <a href="/" className="btn btn-branding-outline">
+            <div className="col-lg-6 mt-4">
+              <a href="/" className="btn btn-branding-outline" rel="noreferrer">
                 Contact me here!
               </a>
             </div>

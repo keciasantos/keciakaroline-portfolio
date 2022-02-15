@@ -1,5 +1,7 @@
 import react from "react";
 import "./Navbar.css";
+import Projects from "./Projects";
+import { NavLink } from "react-router-dom";
 
 export default function Navbar() {
   return (
@@ -23,10 +25,20 @@ export default function Navbar() {
             id="navbarNavAltMarkup"
           >
             <div className="navbar-nav">
-              <a className="nav-link active" aria-current="page" href="/">
+              <a
+                className="nav-link active"
+                aria-current="page"
+                href="/src/components/Homepage.js"
+              >
                 Home
               </a>
-              <a className="nav-link" href="/">
+              {/* <NavLink
+                activeClassName="active"
+                to="/src/components/Projects.js"
+              >
+                Project
+              </NavLink> */}
+              <a className="nav-link" href="/src/components/Projects.js">
                 My projects
               </a>
               <a className="nav-link" href="/">

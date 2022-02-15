@@ -9,11 +9,19 @@ function App() {
       </main>
       <footer className="App-footer">
         This project was coded by{" "}
-        <a href="/" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://www.linkedin.com/in/keciasantos/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Kécia Santos
         </a>{" "}
         and is{" "}
-        <a href="/" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://github.com/keciasantos/react-portfolio"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           open-sourced on GitHub
         </a>{" "}
         and hosted on{" "}

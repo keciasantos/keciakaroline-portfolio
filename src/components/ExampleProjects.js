@@ -26,7 +26,12 @@ export default function ExampleProjects() {
                   with love (one day I will be a proud mom of a Corgi). It was
                   made after a few weeks of classes about HTML and CSS basic.
                 </p>
-                <a href="/" className="btn btn-branding-outline">
+                <a
+                  href="https://www.shecodes.io/workshops/shecodes-basics-00f05685-1a07-4d9f-a4e1-7b822eb75fcb/projects/503334"
+                  className="btn btn-branding-outline"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   View project <i className="fas fa-long-arrow-alt-right"></i>
                 </a>
               </div>
@@ -41,19 +46,30 @@ export default function ExampleProjects() {
                   Javascript, where the user can get real time weather
                   information locally and worldwide.
                 </p>
-                <a href="/" className="btn btn-branding-outline">
+                <a
+                  href="https://weather-application-keciasantos.netlify.app/"
+                  className="btn btn-branding-outline"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   View project <i className="fas fa-long-arrow-alt-right"></i>
                 </a>
-                <p className="mb-3">
+                <p className="mt-2">
                   You can also check out this project updated! Now build with
                   React <i className="fab fa-react"></i>
                 </p>
-                <a href="/" className="btn btn-branding-outline">
+                <a
+                  href="https://react-weather-project-keciasantos.netlify.app/"
+                  className="btn btn-branding-outline"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   View updated project{" "}
                   <i className="fas fa-long-arrow-alt-right"></i>
                 </a>
               </div>
             </div>
+            <br />
             <div className="col d-none d-lg-block">
               <img
                 src={project_2}
@@ -79,7 +95,12 @@ export default function ExampleProjects() {
                   This last project was build with React{" "}
                   <i className="fab fa-react"></i> and two API's <br />
                 </p>
-                <a href="/" className="btn btn-branding-outline">
+                <a
+                  href="https://react-dictionary-project.netlify.app/"
+                  className="btn btn-branding-outline"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   View project <i className="fas fa-long-arrow-alt-right"></i>
                 </a>
               </div>

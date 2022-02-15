@@ -26,15 +26,14 @@
   height: 600px;
 } */
 
-.FooterContact .btn-branding-outline {
+.FooterContact .section-footer .btn-branding-outline {
   font-family: var(--font-italic);
-  margin-top: 40px;
-  padding: 20px 25px;
-  /* background-color: var(--color-secondary-font); */
+  margin-top: 20px;
+  padding: 30px 35px;
   color: var(--color-primary-font);
   border: 1px solid var(--color-primary-font);
   border-radius: 4px;
-  font-size: 18px;
+  font-size: 22px;
 }
 .btn:hover {
   color: var(--color-secondary-font);

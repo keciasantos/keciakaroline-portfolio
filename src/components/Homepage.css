@@ -35,10 +35,20 @@ p {
 
 .Homepage .heading {
   background-color: var(--background-primary);
-  padding: 160px 20px;
+  padding: 80px 60px;
   text-align: center;
 }
 
+.Homepage .heading .introdution {
+  margin-top: 220px;
+}
+.Homepage .heading .img-fluid {
+  border-radius: 20px;
+  padding: 12px auto;
+  margin-top: 60px;
+  width: fit-content;
+  height: 800px;
+}
 .Homepage .headline {
   font-weight: 700;
   font-size: 23px;
@@ -57,7 +67,7 @@ p {
 
 .Homepage .btn-branding-outline {
   font-family: var(--font-italic);
-  margin-top: 40px;
+  margin-top: 10px;
   padding: 20px 25px;
   /* background-color: var(--color-secondary-font); */
   color: var(--color-primary-font);
