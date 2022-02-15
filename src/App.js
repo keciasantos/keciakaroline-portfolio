@@ -24,6 +24,26 @@ function App() {
         >
           Netlify.
         </a>
+        <div class="social-link">
+          <span>
+            <a
+              href="https://github.com/keciasantos"
+              target="_blank"
+              title="GitHub page - Kécia Santos"
+              alt="GitHub page"
+            >
+              <i class="fab fa-github-square"></i>
+            </a>{" "}
+            <a
+              href="https://www.linkedin.com/in/keciasantos/"
+              target="_blank"
+              title="Linkedin page - Kécia Santos"
+              alt="Linkedin page"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </span>
+        </div>
       </footer>
     </div>
   );

@@ -16,7 +16,7 @@ export default function Navbar() {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
           <div
             className="collapse navbar-collapse justify-content-end"
@@ -34,15 +34,6 @@ export default function Navbar() {
               </a>
               <a className="nav-link" href="/">
                 Contact
-              </a>
-
-              <a
-                href="https://www.linkedin.com/in/keciasantos/"
-                target="_blank"
-                title="Linkedin page - Kécia Santos"
-                className="nav-link linkedin-page"
-              >
-                <i className="fab fa-linkedin"></i>
               </a>
             </div>
           </div>

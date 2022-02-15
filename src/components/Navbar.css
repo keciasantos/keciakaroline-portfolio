@@ -8,8 +8,13 @@
   --color-secondary-font: rgb(247, 247, 247);
 }
 
+.Navbar .navbar-brand {
+  font-size: 24px;
+}
+
 .Navbar .navbar {
   background-color: var(--color-secondary-font);
+  font-size: 20px;
 }
 
 .Navbar .navbar a {
@@ -19,4 +24,38 @@
 .Navbar .navbar-toggler,
 .navbar a:hover {
   color: var(--color-primary-font);
+}
+
+.Navbar .container-fluid {
+  border-radius: 20px;
+}
+
+@media (max-width: 900px) {
+  .Navbar .container-fluid {
+    margin: 2px 2px !important;
+    border-radius: 10px;
+    width: 550px;
+    height: 400px;
+  }
+
+  .Navbar .custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+
+  .Navbar .custom-toggler.navbar-toggler {
+    border-color: var(--color-primary-font);
+  }
+
+  .Navbar .navbar-brand .navbar {
+    font-size: 14px;
+  }
+
+  .Navbar .navbar a {
+    color: var(--background-body);
+    transition: all 100ms ease-in-out;
+  }
+
+  .Navbar .navbar a:hover {
+    color: var(--color-primary-font);
+  }
 }

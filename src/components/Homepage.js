@@ -9,7 +9,7 @@ export default function Homepage() {
   return (
     <div className="Homepage">
       <Navbar />
-      <div className="heading mt-5">
+      <div className="heading">
         <div className="container-fluid">
           <div className="row">
             <div className="col-sm-6">
@@ -23,7 +23,7 @@ export default function Homepage() {
                 ></span>{" "}
                 Brazilian Front-end developer 👩‍💻 based in Europe
               </h3>
-              <a href={ExampleProjects} className="btn btn-branding">
+              <a href="/" className="btn btn-branding">
                 Get started!
               </a>
             </div>
