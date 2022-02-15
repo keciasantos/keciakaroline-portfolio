@@ -9,7 +9,7 @@ export default function ExampleProjects() {
     <div className="ExampleProjects">
       <div className="homepage" id="homepage">
         <div className="container-fluid">
-          <div className="row m-5">
+          <div className="row">
             <div className="col d-none d-lg-block">
               <img
                 src={project_1}
@@ -32,7 +32,7 @@ export default function ExampleProjects() {
               </div>
             </div>
           </div>
-          <div className="row m-5">
+          <div className="row">
             <div className="col">
               <div className="project-description">
                 <h2 className="mb-3">Weather App</h2>
@@ -63,7 +63,7 @@ export default function ExampleProjects() {
               />
             </div>
           </div>
-          <div className="row m-5">
+          <div className="row">
             <div className="col d-none d-lg-block">
               <img
                 src={project_3}

@@ -7,10 +7,14 @@
   --color-primary-font: #e767b0;
   --color-secondary-font: rgb(247, 247, 247);
 }
+.ExampleProjects .homepage {
+  background-color: var(--background-body);
+  padding: 50px 40px;
+}
 
 .ExampleProjects .project-description {
   color: var(--color-secondary-font);
-  margin: 180px 70px;
+  margin: 140px 70px;
 }
 
 .ExampleProjects .project-description p {
@@ -23,6 +27,21 @@
   font-size: 64px;
 }
 
+.ExampleProjects .row {
+  margin: 20px 200px;
+}
+
+/* .ExampleProjects .float-right {
+  float: right;
+} */
+
+.ExampleProjects .container-fluid .project {
+  border-radius: 20px;
+  padding: 12px auto;
+  margin-top: 60px;
+  width: 700px;
+  height: 600px;
+}
 .ExampleProjects .btn-branding {
   font-family: var(--font-italic);
   margin-top: 50px;
@@ -48,9 +67,43 @@
 .ExampleProjects .btn:hover {
   color: var(--color-secondary-font);
 }
-.content .project,
-.container-fluid .project {
-  border-radius: 20px;
-  width: 700px;
-  height: 600px;
+
+@media (max-width: 900px) {
+  .container-fluid .project {
+    border-radius: 10px;
+    width: 550px;
+    height: 400px;
+  }
+  .btn-branding {
+    margin-top: 25px;
+    padding: 10px 15px;
+  }
+  .homepage {
+    padding: 2px;
+  }
+  .container-fluid .row {
+    margin: 5px 2px !important;
+  }
+  .project-description {
+    margin: 20px 10px 5px 10px;
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+  }
+
+  .project-description h2 {
+    padding-top: 20px !important;
+    margin: 5px 2px !important;
+    font-size: 24px;
+  }
+  .project-description p {
+    margin: 5px 5px !important;
+    padding: 20px 5px !important;
+    font-size: 16px;
+  }
+  .btn-branding-outline {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    padding: 10px 15px;
+  }
 }
