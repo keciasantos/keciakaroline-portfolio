@@ -4,8 +4,11 @@ import profile_1 from "../images/profile_1.png";
 import ExampleProjects from "./ExampleProjects";
 import FooterContact from "./FooterContact";
 import "./Homepage.css";
+import Footer from "./Footer";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function Homepage() {
+  const navigate = useNavigate();
   return (
     <div className="Homepage">
       <Navbar />
@@ -23,12 +26,16 @@ export default function Homepage() {
                 ></span>{" "}
                 Brazilian Front-end developer 👩‍💻 based in Europe
               </h3>
-              <a
+              <Link to="/exampleprojects" className="btn btn-branding">
+                {" "}
+                Try me
+              </Link>
+              {/* <a
                 href="/src/components/ExampleProjects.js#homepage"
                 className="btn btn-branding"
               >
                 Get started!
-              </a>
+              </a> */}
             </div>
             <div className="col-sm-6">
               <img src={profile_1} alt="Kécia Santos" className="img-fluid" />
@@ -41,6 +48,7 @@ export default function Homepage() {
       </p>
       <ExampleProjects />
       <FooterContact />
+      <Footer />
     </div>
   );
 }

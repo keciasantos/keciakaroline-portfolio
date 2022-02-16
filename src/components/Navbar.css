@@ -25,6 +25,10 @@
 .navbar a:hover {
   color: var(--color-primary-font);
 }
+.Navbar nav a.active {
+  font-weight: 800;
+  color: var(--color-primary-font);
+}
 
 .Navbar .container-fluid {
   border-radius: 20px;

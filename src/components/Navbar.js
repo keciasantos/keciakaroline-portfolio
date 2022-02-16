@@ -1,14 +1,15 @@
 import react from "react";
 import "./Navbar.css";
-import Projects from "./Projects";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
     <div className="Navbar">
       <nav className="navbar fixed-top navbar-expand-lg">
         <div className="container-fluid">
-          <a className="navbar-brand">Kécia Santos</a>
+          <span className="navbar-brand">
+            <strong>Kécia Santos</strong>
+          </span>
           <button
             className="navbar-toggler custom-toggler"
             type="button"
@@ -25,28 +26,18 @@ export default function Navbar() {
             id="navbarNavAltMarkup"
           >
             <div className="navbar-nav">
-              <a
-                className="nav-link active"
-                aria-current="page"
-                href="/src/components/Homepage.js"
-              >
+              <NavLink to="/" className="nav-link" aria-current="page">
                 Home
-              </a>
-              {/* <NavLink
-                activeClassName="active"
-                to="/src/components/Projects.js"
-              >
-                Project
-              </NavLink> */}
-              <a className="nav-link" href="/src/components/Projects.js">
-                My projects
-              </a>
-              <a className="nav-link" href="/">
+              </NavLink>
+              <NavLink to="/projects" className="nav-link">
+                Projects
+              </NavLink>
+              <NavLink to="/about" className="nav-link">
                 About
-              </a>
-              <a className="nav-link" href="/">
+              </NavLink>
+              <NavLink to="/contact" className="nav-link">
                 Contact
-              </a>
+              </NavLink>
             </div>
           </div>
         </div>
