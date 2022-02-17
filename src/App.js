@@ -4,6 +4,8 @@ import Homepage from "./components/Homepage";
 import Projects from "./components/Projects";
 import Navbar from "./components/Navbar";
 import ExampleProjects from "./components/ExampleProjects";
+import About from "./components/About";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -14,10 +16,11 @@ function App() {
         <Route exact path="/projects" element={<Projects />}></Route>
         <Route
           exact
-          path="/exampleprojects"
+          path="/exampleprojects#homepage"
           element={<ExampleProjects />}
         ></Route>
-        {/* <Route path="/artigos" element={Artigos} /> */}
+        <Route exact path="/about" element={<About />} />
+        <Route exact path="/contact" element={<Contact />} />
       </Routes>
     </div>
   );

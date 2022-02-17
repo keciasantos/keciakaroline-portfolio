@@ -5,10 +5,9 @@ import ExampleProjects from "./ExampleProjects";
 import FooterContact from "./FooterContact";
 import "./Homepage.css";
 import Footer from "./Footer";
-import { Link, useNavigate } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 export default function Homepage() {
-  const navigate = useNavigate();
   return (
     <div className="Homepage">
       <Navbar />
@@ -26,16 +25,10 @@ export default function Homepage() {
                 ></span>{" "}
                 Brazilian Front-end developer 👩‍💻 based in Europe
               </h3>
-              <Link to="/exampleprojects" className="btn btn-branding">
-                {" "}
-                Try me
-              </Link>
-              {/* <a
-                href="/src/components/ExampleProjects.js#homepage"
-                className="btn btn-branding"
-              >
+
+              <HashLink to="#homepage" className="btn btn-branding">
                 Get started!
-              </a> */}
+              </HashLink>
             </div>
             <div className="col-sm-6">
               <img src={profile_1} alt="Kécia Santos" className="img-fluid" />

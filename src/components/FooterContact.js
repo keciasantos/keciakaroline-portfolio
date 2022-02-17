@@ -1,5 +1,6 @@
 import react from "react";
 import "./FooterContact.css";
+import { Link } from "react-router-dom";
 
 export default function FooterContact() {
   return (
@@ -14,9 +15,9 @@ export default function FooterContact() {
               </p>
             </div>
             <div className="col-lg-6 mt-4">
-              <a href="/" className="btn btn-branding-outline" rel="noreferrer">
+              <Link to="/contact" className="btn btn-branding-outline">
                 Contact me here!
-              </a>
+              </Link>
             </div>
           </div>
         </div>
