@@ -1,0 +1,54 @@
+:root {
+  --font-title-text: "Nunito", sans-serif;
+  --font-italic: "Courgette", cursive;
+  --background-primary: #3f415a;
+  --background-body: #282a36;
+  --background-btn: #6a6577;
+  --color-primary-font: #e767b0;
+  --color-secondary-font: rgb(247, 247, 247);
+}
+
+.Contact .content-container {
+  padding: 160px 70px;
+  background-color: var(--background-body);
+}
+.Contact .content-container h1 {
+  font-size: 64px;
+  line-height: 80px;
+}
+.Contact .contact-link {
+  border-radius: 20px;
+  background-color: var(--background-primary);
+  display: block;
+  margin: 0 auto;
+  padding: 30px 20px;
+  width: 300px;
+  height: 150px;
+}
+
+.Contact a {
+  color: var(--color-primary-font) !important;
+  text-decoration: none;
+  transition: all 100ms ease-in-out;
+}
+
+.Contact a:hover {
+  opacity: 70%;
+  cursor: pointer;
+}
+@media (max-width: 900px) {
+  .Contact .content-contact,
+  .content-container {
+    margin: 0px !important;
+    padding: 50px 0px 20px 0px !important;
+  }
+  .Contact .content-container {
+    padding: 100px 20px 60px 20px;
+  }
+
+  .Contact .contact-link {
+    padding: 15px 5px 5px 5px;
+    width: 230px;
+    height: 100px;
+  }
+}
