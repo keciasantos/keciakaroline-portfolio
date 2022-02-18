@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Homepage from "./components/Homepage";
 import Projects from "./components/Projects";
-import Navbar from "./components/Navbar";
+import Navigation from "./components/Navigation";
 import About from "./components/About";
 import Contact from "./components/Contact";
 
@@ -11,7 +11,7 @@ import ScrollToTop from "./ScrollToTop";
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      <Navigation />
       <ScrollToTop>
         <Routes>
           <Route exact path="/" element={<Homepage />}></Route>

@@ -1,16 +1,16 @@
 import react from "react";
-import Navbar from "./Navbar";
 import profile_1 from "../images/profile_1.png";
 import ExampleProjects from "./ExampleProjects";
 import FooterContact from "./FooterContact";
 import "./Homepage.css";
 import Footer from "./Footer";
 import { HashLink } from "react-router-hash-link";
+import Navigation from "./Navigation";
 
 export default function Homepage() {
   return (
     <div className="Homepage">
-      <Navbar />
+      <Navigation />
       <div className="heading">
         <div className="container-fluid">
           <div className="row">
