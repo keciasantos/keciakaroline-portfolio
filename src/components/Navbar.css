@@ -35,11 +35,9 @@
 }
 
 @media (max-width: 900px) {
-  .Navbar .container-fluid {
+  .Navbar .navbar .container-fluid {
     margin: 2px 2px !important;
     border-radius: 10px;
-    width: 550px;
-    height: 400px;
   }
 
   .Navbar .custom-toggler .navbar-toggler-icon {
@@ -59,7 +57,8 @@
     transition: all 100ms ease-in-out;
   }
 
-  .Navbar .navbar a:hover {
+  .Navbar .navbar-toggler,
+  .Navbar .navbar .navbar-nav a:hover {
     color: var(--color-primary-font);
   }
 }

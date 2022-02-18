@@ -38,15 +38,6 @@
   width: 700px;
   height: 600px;
 }
-.ExampleProjects .btn-branding {
-  font-family: var(--font-italic);
-  padding: 20px 25px;
-  background-color: var(--background-btn);
-  color: var(--color-secondary-font);
-  border-radius: 4px;
-  font-size: 20px;
-  line-height: 20px;
-}
 
 .ExampleProjects .btn-branding-outline {
   font-family: var(--font-italic);
@@ -62,39 +53,37 @@
 }
 
 @media (max-width: 900px) {
-  .container-fluid .project {
+  .ExampleProjects .container-fluid .project {
     border-radius: 10px;
     width: 550px;
     height: 400px;
   }
-  .btn-branding {
-    margin-top: 25px;
-    padding: 10px 15px;
-  }
-  .homepage {
+
+  .ExampleProjects .homepage {
     padding: 2px;
   }
-  .container-fluid .row {
-    margin: 5px 2px !important;
+
+  .ExampleProjects .homepage .container-fluid {
+    margin-left: -30px;
   }
-  .project-description {
-    margin: 20px 10px 5px 10px;
-    text-align: center;
+  .ExampleProjects .homepage .container-fluid .row .project-description {
+    margin: 0px -145px;
+    text-align: center !important;
     width: fit-content;
     height: fit-content;
   }
 
-  .project-description h2 {
+  .ExampleProjects .homepage .container-fluid .row .project-description h2 {
     padding-top: 20px !important;
     margin: 5px 2px !important;
     font-size: 24px;
   }
-  .project-description p {
+  .ExampleProjects .project-description p {
     margin: 5px 5px !important;
     padding: 20px 5px !important;
     font-size: 16px;
   }
-  .btn-branding-outline {
+  .ExampleProjects .btn-branding-outline {
     margin-top: 25px;
     margin-bottom: 15px;
     padding: 10px 15px;

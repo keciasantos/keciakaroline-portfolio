@@ -14,7 +14,7 @@ export default function Homepage() {
       <div className="heading">
         <div className="container-fluid">
           <div className="row">
-            <div className="col-sm-6 introdution">
+            <div className="col introdution">
               <h2>Hi, I am</h2>
               <h1>Kécia Santos</h1>
               <h3 className="font-text mb-5">
@@ -30,7 +30,7 @@ export default function Homepage() {
                 Get started!
               </HashLink>
             </div>
-            <div className="col-sm-6">
+            <div className="col d-none d-lg-block">
               <img src={profile_1} alt="Kécia Santos" className="img-fluid" />
             </div>
           </div>
