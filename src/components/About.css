@@ -68,6 +68,14 @@
     text-align: center;
     padding: 20px 5px 0px 0px;
   }
+  .About .content-container h1 {
+    font-size: 48px;
+    line-height: 55px;
+  }
+  .About .content-container h2 {
+    font-size: 28px;
+    margin-bottom: 1px;
+  }
   /* .About .content-container {
     margin: 0px !important;
     padding: 50px 0px 20px 0px !important;
