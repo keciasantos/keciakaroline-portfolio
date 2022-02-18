@@ -1,20 +1,13 @@
 import { Navbar, Nav, Container } from "react-bootstrap";
 import react from "react";
 import "./Navigation.css";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export default function Navigation() {
   return (
     <>
-      <Navbar
-        collapseOnSelect
-        className="Navbar"
-        fixed="top"
-        expand="lg"
-        bg="dark"
-        variant="dark"
-      >
-        <Container fluid className="navbar">
+      <Navbar collapseOnSelect className="navbar" fixed="top" expand="md">
+        <Container fluid>
           <Navbar.Brand className="navbar-brand">
             <strong>Kécia Santos</strong>
           </Navbar.Brand>
