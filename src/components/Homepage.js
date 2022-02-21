@@ -5,12 +5,10 @@ import FooterContact from "./FooterContact";
 import "./Homepage.css";
 import Footer from "./Footer";
 import { HashLink } from "react-router-hash-link";
-import Navbar from "./Navbar";
 
 export default function Homepage() {
   return (
     <div className="Homepage">
-      {/* <Navbar /> */}
       <div className="heading">
         <div className="container-fluid">
           <div className="row">
