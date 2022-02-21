@@ -10,7 +10,7 @@ import Navbar from "./Navbar";
 export default function Homepage() {
   return (
     <div className="Homepage">
-      <Navbar />
+      {/* <Navbar /> */}
       <div className="heading">
         <div className="container-fluid">
           <div className="row">

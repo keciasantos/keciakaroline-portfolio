@@ -1,21 +1,37 @@
 import "./Navbar.css";
-import { NavLink, Routes, Route, Link } from "react-router-dom";
+import react from "react";
+import { NavLink } from "react-router-dom";
 
-export default function Navigation() {
-  return {
-    /* <Nav className="me-auto navbar-nav">
-              <Nav.Link href="#" className="nav-link" aria-current="page">
+export default function Navbar() {
+  return (
+    <>
+      <nav className="navbar">
+        <div className="nav-container">
+          <span className="nav-logo">Kécia Santos</span>
+          <ul className="nav-menu">
+            <li className="nav-item">
+              <NavLink exact to="/" className="nav-link">
                 Home
-              </Nav.Link>
-              <Nav.Link href="#projects" className="nav-link">
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink exact to="/projects" className="nav-link">
                 Projects
-              </Nav.Link>
-              <Nav.Link href="#about" className="nav-link">
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink exact to="/about" className="nav-link">
                 About
-              </Nav.Link>
-              <Nav.Link href="#contact" className="nav-link">
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink exact to="/contact" className="nav-link">
                 Contact
-              </Nav.Link>
-            </Nav> */
-  };
+              </NavLink>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </>
+  );
 }
