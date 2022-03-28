@@ -42,14 +42,17 @@ export default function ContactForm() {
         </h2>
         <div>
           <label>Name:</label>
+          <br />
           <input type="text" name="user_name"></input>
         </div>
         <div>
           <label>Email:</label>
+          <br />
           <input type="email" name="user_email"></input>
         </div>
         <div>
           <label>Message:</label>
+          <br />
           <textarea name="message"></textarea>
           {/* <br /> */}
           <button

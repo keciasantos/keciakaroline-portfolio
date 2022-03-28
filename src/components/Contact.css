@@ -15,12 +15,14 @@
 .Contact .content-container h1 {
   font-size: 64px;
   line-height: 80px;
+  text-align: center;
 }
 .contact {
   display: flex;
   justify-content: space-between;
   align-content: space-between;
   align-items: center;
+  text-align: center;
   margin: 0px 50px;
 }
 
@@ -36,6 +38,7 @@
 }
 
 .Contact a {
+  text-align: center;
   color: var(--color-primary-font) !important;
   text-decoration: none;
   transition: all 100ms ease-in-out;
