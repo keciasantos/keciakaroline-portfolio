@@ -9,21 +9,30 @@
 }
 
 .Contact .content-container {
-  padding: 160px 70px;
+  padding: 130px 70px;
   background-color: var(--background-body);
 }
 .Contact .content-container h1 {
   font-size: 64px;
   line-height: 80px;
 }
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  align-items: center;
+  margin: 0px 50px;
+}
+
 .Contact .contact-link {
   border-radius: 20px;
   background-color: var(--background-primary);
   display: block;
-  margin: 0 auto;
+  margin: 20px 20px;
   padding: 30px 20px;
   width: 300px;
   height: 150px;
+  align-items: center;
 }
 
 .Contact a {
@@ -40,10 +49,10 @@
   .Contact .content-contact,
   .content-container {
     margin: 0px !important;
-    padding: 50px 0px 20px 0px !important;
+    padding: 40px 0px 20px 0px !important;
   }
   .Contact .content-container {
-    padding: 100px 20px 60px 20px;
+    padding: 50px 20px 60px 20px;
   }
 
   .Contact .contact-link {

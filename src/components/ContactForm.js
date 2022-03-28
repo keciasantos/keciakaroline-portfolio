@@ -28,18 +28,18 @@ export default function ContactForm() {
 
   return (
     <div className="ContactForm">
-      <h2>
-        Contact Me!{" "}
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="contact-icon"
-          viewBox="0 0 20 20"
-          fill="currentColor"
-        >
-          <path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z" />
-        </svg>
-      </h2>
       <form ref={form} onSubmit={handleSubmit}>
+        <h2>
+          Contact Me!{" "}
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="contact-icon"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
+            <path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z" />
+          </svg>
+        </h2>
         <div>
           <label>Name:</label>
           <input type="text" name="user_name"></input>
@@ -51,12 +51,15 @@ export default function ContactForm() {
         <div>
           <label>Message:</label>
           <textarea name="message"></textarea>
-          <input
+          {/* <br /> */}
+          <button
             type="submit"
             name="submit"
             value="Send"
-            className="formBtn"
-          ></input>
+            className="form-btn btn-branding"
+          >
+            Send
+          </button>
         </div>
         {/* <div class="g-recaptcha" data-sitekey="your_site_key"></div>
         <br /> */}
