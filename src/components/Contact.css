@@ -9,29 +9,23 @@
 }
 
 .Contact .content-container {
-  padding: 130px 70px;
+  padding: 80px 70px;
   background-color: var(--background-body);
 }
 .Contact .content-container h1 {
   font-size: 64px;
   line-height: 80px;
   text-align: center;
-}
-.contact {
-  display: flex;
-  justify-content: space-between;
-  align-content: space-between;
-  align-items: center;
-  text-align: center;
-  margin: 0px 50px;
+  margin-bottom: 60px;
 }
 
 .Contact .contact-link {
   border-radius: 20px;
   background-color: var(--background-primary);
   display: block;
-  margin: 20px 20px;
-  padding: 30px 20px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  padding: 25px 20px;
   width: 300px;
   height: 150px;
   align-items: center;
@@ -49,18 +43,22 @@
   cursor: pointer;
 }
 @media (max-width: 900px) {
-  .Contact .content-contact,
-  .content-container {
-    margin: 0px !important;
-    padding: 40px 0px 20px 0px !important;
-  }
   .Contact .content-container {
-    padding: 50px 20px 60px 20px;
+    padding-top: 40px !important;
   }
 
+  .Contact .content-container h1 {
+    font-size: 45px;
+    line-height: 50px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
   .Contact .contact-link {
-    padding: 15px 5px 5px 5px;
-    width: 230px;
-    height: 100px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    padding: 17px 5px 5px 5px;
+    width: 220px;
+    height: 110px;
   }
 }
