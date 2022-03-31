@@ -4,18 +4,10 @@ import emailjs from "@emailjs/browser";
 import ReCAPTCHA from "react-google-recaptcha";
 
 export default function ContactForm() {
-  const state = {
-    name: "",
-    email: "",
-    message: "",
-  };
-
   const form = useRef();
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    const {name, email, message}
-
     emailjs
       .sendForm(
         "service_dls8dul",
@@ -24,14 +16,15 @@ export default function ContactForm() {
         "TJN42Gc7yk7Gk6-RG"
       )
       .then(
-        (result) => {
-          console.log(result.text);
+        ({ status }) => {
+          // show sucess message
+          alert("Thank you for your contact! I will reply as soon as possible");
         },
-        (error) => {
-          console.log(error.text);
+        () => {
+          // show error message
+          alert("Please verify that you are a human.");
         }
       );
-    alert("Thank you for your contact! I will reply as soon as possible");
   };
 
   return (
@@ -63,16 +56,16 @@ export default function ContactForm() {
           <br />
           <textarea name="message"></textarea>
           <ReCAPTCHA
+            className="recaptcha"
             sitekey="6LdT7jEfAAAAADT0pLJvphtSaR_NkbClcN3I__NO"
-            onloadCallback={recaptchaLoaded}
-            verifyCallback={verifiedRecaptcha}
+            onChange={handleSubmit}
           />
-
           <button
             type="submit"
             name="submit"
             value="Send"
             className="form-btn btn-branding"
+            onSubmit={handleSubmit}
           >
             Send
           </button>
