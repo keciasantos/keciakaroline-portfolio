@@ -54,7 +54,6 @@ export default function ContactForm() {
           <label>Message:</label>
           <br />
           <textarea name="message"></textarea>
-          {/* <br /> */}
           <button
             type="submit"
             name="submit"
@@ -64,8 +63,11 @@ export default function ContactForm() {
             Send
           </button>
         </div>
-        {/* <div class="g-recaptcha" data-sitekey="your_site_key"></div>
-        <br /> */}
+        <div
+          class="g-recaptcha"
+          data-sitekey="6LdT7jEfAAAAADT0pLJvphtSaR_NkbClcN3I__NO"
+        ></div>
+        <br />
       </form>
     </div>
   );
