@@ -1,12 +1,20 @@
-import React, { useRef } from "react";
+import React, { useRef, useReducer, useState } from "react";
 import "./ContactForm.css";
 import emailjs from "@emailjs/browser";
+import ReCAPTCHA from "react-google-recaptcha";
 
 export default function ContactForm() {
+  const state = {
+    name: "",
+    email: "",
+    message: "",
+  };
+
   const form = useRef();
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    const {name, email, message}
 
     emailjs
       .sendForm(
@@ -54,6 +62,12 @@ export default function ContactForm() {
           <label>Message:</label>
           <br />
           <textarea name="message"></textarea>
+          <ReCAPTCHA
+            sitekey="6LdT7jEfAAAAADT0pLJvphtSaR_NkbClcN3I__NO"
+            onloadCallback={recaptchaLoaded}
+            verifyCallback={verifiedRecaptcha}
+          />
+
           <button
             type="submit"
             name="submit"
@@ -63,12 +77,14 @@ export default function ContactForm() {
             Send
           </button>
         </div>
-        <div
+        {/* <div
           class="g-recaptcha"
           data-sitekey="6LdT7jEfAAAAADT0pLJvphtSaR_NkbClcN3I__NO"
-        ></div>
+        ></div> */}
         <br />
       </form>
     </div>
   );
 }
+
+// className="form-btn btn-branding"
