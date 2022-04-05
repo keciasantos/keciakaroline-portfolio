@@ -1,4 +1,4 @@
-import react from "react";
+import React from "react";
 import "./FooterContact.css";
 import { Link } from "react-router-dom";
 

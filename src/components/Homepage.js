@@ -1,4 +1,4 @@
-import react from "react";
+import React from "react";
 import profile_1 from "../images/profile_1.png";
 import ExampleProjects from "./ExampleProjects";
 import FooterContact from "./FooterContact";

@@ -1,4 +1,4 @@
-import React, { useRef, useReducer, useState } from "react";
+import React, { useRef } from "react";
 import "./ContactForm.css";
 import emailjs from "@emailjs/browser";
 import ReCAPTCHA from "react-google-recaptcha";
