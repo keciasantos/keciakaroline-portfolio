@@ -26,7 +26,7 @@ export default function Navbar() {
                 Home
               </NavLink>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <NavLink
                 exact
                 to="/projects"
@@ -36,7 +36,7 @@ export default function Navbar() {
               >
                 Projects
               </NavLink>
-            </li>
+            </li> */}
             <li className="nav-item">
               <NavLink
                 exact
