@@ -22,12 +22,12 @@ export default function Projects() {
                 className="img-fluid project"
                 title="This is my weather project"
               />
-              <button className="btn btn-branding-outline">
+              <div className="btn btn-branding">
                 <a href="/" target="_blank" rel="noreferrer">
                   GitHub <i className="fas fa-long-arrow-alt-right"></i>
                 </a>
-              </button>
-              <button className="btn btn-branding-outline">
+              </div>
+              <div className="btn btn-branding">
                 <a
                   href="https://react-weather-project-keciasantos.netlify.app/"
                   target="_blank"
@@ -35,7 +35,7 @@ export default function Projects() {
                 >
                   Demo live <i className="fas fa-long-arrow-alt-right"></i>
                 </a>
-              </button>
+              </div>
             </div>
 
             <div className="col-md-6">
@@ -46,12 +46,12 @@ export default function Projects() {
                 className="img-fluid project"
                 title="This is my dictionary project"
               />
-              <button className="btn btn-branding-outline">
+              <div className="btn btn-branding">
                 <a href="/" target="_blank" rel="noreferrer">
                   GitHub <i className="fas fa-long-arrow-alt-right"></i>
                 </a>
-              </button>
-              <button className="btn btn-branding-outline">
+              </div>
+              <div className="btn btn-branding">
                 <a
                   href="https://react-dictionary-project.netlify.app/"
                   target="_blank"
@@ -59,7 +59,7 @@ export default function Projects() {
                 >
                   Demo live <i className="fas fa-long-arrow-alt-right"></i>
                 </a>
-              </button>
+              </div>
             </div>
             <div className="row">
               <div className="col-md-6">
@@ -70,12 +70,12 @@ export default function Projects() {
                   className="img-fluid project"
                   title="This is my TODO list project"
                 />
-                <button className="btn btn-branding-outline">
+                <div className="btn btn-branding">
                   <a href="/" target="_blank" rel="noreferrer">
                     GitHub <i className="fas fa-long-arrow-alt-right"></i>
                   </a>
-                </button>
-                <button className="btn btn-branding-outline">
+                </div>
+                <div className="btn btn-branding">
                   <a
                     href="https://todo-app-keciasantos.netlify.app/"
                     target="_blank"
@@ -83,15 +83,16 @@ export default function Projects() {
                   >
                     Demo live <i className="fas fa-long-arrow-alt-right"></i>
                   </a>
-                </button>
-
-                <a
-                  href="https://www.frontendmentor.io/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  frontendmentor.io
-                </a>
+                </div>
+                <div className="btn btn-branding">
+                  <a
+                    href="https://www.frontendmentor.io/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    frontendmentor.io
+                  </a>
+                </div>
               </div>
 
               <div className="col-md-6">
@@ -102,12 +103,12 @@ export default function Projects() {
                   className="img-fluid project"
                   title="Yasmin Rolim Portfolio"
                 />
-                <button className="btn btn-branding-outline">
+                <div className="btn btn-branding">
                   <a href="/" target="_blank" rel="noreferrer">
                     GitHub <i className="fas fa-long-arrow-alt-right"></i>
                   </a>
-                </button>
-                <button className="btn btn-branding-outline">
+                </div>
+                <div className="btn btn-branding">
                   <a
                     href="https://yasminrolim-arquitetura.netlify.app/"
                     target="_blank"
@@ -115,7 +116,7 @@ export default function Projects() {
                   >
                     Demo live <i className="fas fa-long-arrow-alt-right"></i>
                   </a>
-                </button>
+                </div>
               </div>
             </div>
           </div>
