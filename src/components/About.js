@@ -3,7 +3,6 @@ import Footer from "./Footer";
 import FooterContact from "./FooterContact";
 import "./About.css";
 import { HashLink } from "react-router-hash-link";
-// import profile_2 from "../images/profile_2.jpg";
 
 export default function About() {
   return (

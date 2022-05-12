@@ -1,6 +1,6 @@
 import React from "react";
 import profile_1 from "../images/profile_1.jpg";
-import ExampleProjects from "./Projects";
+import Projects from "./Projects";
 import FooterContact from "./FooterContact";
 import "./Homepage.css";
 import Footer from "./Footer";

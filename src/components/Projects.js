@@ -4,7 +4,7 @@ import project_2 from "../images/project_2.png";
 import project_3 from "../images/project_3.png";
 import project_4 from "../images/project_4.png";
 import project_5 from "../images/project_5.png";
-import "./ExampleProjects.css";
+import "./Projects.css";
 
 export default function ExampleProjects() {
   return (
