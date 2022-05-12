@@ -1,10 +1,11 @@
 import React from "react";
 import profile_1 from "../images/profile_1.jpg";
-import ExampleProjects from "./ExampleProjects";
+import ExampleProjects from "./Projects";
 import FooterContact from "./FooterContact";
 import "./Homepage.css";
 import Footer from "./Footer";
 import { HashLink } from "react-router-hash-link";
+import About from "./About";
 
 export default function Homepage() {
   return (
@@ -13,19 +14,14 @@ export default function Homepage() {
         <div className="container-fluid">
           <div className="row">
             <div className="col introdution">
-              <h2>Hi, I am</h2>
-              <h1>Kécia Santos</h1>
+              <h1>Hey, I'm Kécia Santos</h1>
               <h3 className="font-text mb-5">
-                {" "}
-                <span
-                  className="iconify-inline"
-                  data-icon="emojione-v1:flag-for-brazil"
-                ></span>{" "}
-                Brazilian Front-end developer 👩‍💻 based in Europe
+                A Frontend focused Web Developer building the Frontend of
+                Websites and Web Applications
               </h3>
 
-              <HashLink to="#homepage" className="btn btn-branding">
-                Get started!
+              <HashLink to="#projects" className="btn btn-branding">
+                Projects
               </HashLink>
             </div>
             <div className="col d-none d-lg-block">
@@ -34,9 +30,7 @@ export default function Homepage() {
           </div>
         </div>
       </div>
-      <p class="headline text-center m-4">
-        A little show about my featured projects until now
-      </p>
+      <About />
       <ExampleProjects />
       <FooterContact />
       <Footer />

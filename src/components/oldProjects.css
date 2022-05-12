@@ -1,0 +1,83 @@
+:root {
+  --font-title-text: "Nunito", sans-serif;
+  --font-italic: "Courgette", cursive;
+  --background-primary: #3f415a;
+  --background-body: #282a36;
+  --background-btn: #6a6577;
+  --color-primary-font: #e767b0;
+  --color-secondary-font: rgb(247, 247, 247);
+}
+.Projects .content {
+  margin: 30px;
+}
+.Projects .content h1 {
+  font-size: 50px !important;
+}
+
+.Projects .content h3 {
+  font-weight: 700;
+}
+
+.Projects .content p {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.Projects .content .project {
+  border-radius: 20px;
+  width: 700px;
+  height: 600px;
+}
+
+.Projects .content-container {
+  padding: 160px 70px;
+  background-color: var(--background-body);
+}
+
+.Projects .content-container p {
+  font-size: 20px;
+  color: var(--color-secondary-font);
+}
+
+.btn-branding-outline {
+  font-family: var(--font-italic);
+  margin-top: 40px;
+  padding: 20px 25px;
+  color: var(--color-primary-font);
+  border: 1px solid var(--color-primary-font);
+  border-radius: 4px;
+  font-size: 18px;
+}
+
+.btn:hover {
+  color: var(--color-secondary-font);
+}
+
+@media (max-width: 900px) {
+  .Projects .content-container {
+    padding: 100px 20px 60px 20px;
+  }
+  .Projects .container-fluid .row {
+    margin: 5px 2px !important;
+  }
+  .Projects .content-container,
+  .Projects .content {
+    text-align: center;
+    padding: 20px 5px 0px 0px;
+  }
+  .Projects .content .project {
+    border-radius: 10px;
+    width: 450px;
+    height: 300px;
+  }
+  .Projects .content-container {
+    margin: 0px !important;
+    padding: 50px 0px 20px 0px !important;
+  }
+
+  .btn-branding-outline {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    padding: 10px 15px;
+  }
+}
