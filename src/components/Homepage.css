@@ -1,109 +1,148 @@
-:root {
-  --font-title-text: "Nunito", sans-serif;
-  --font-italic: "Courgette", cursive;
-  --background-primary: #3f415a;
-  --background-body: #282a36;
-  --background-btn: #6a6577;
-  --color-primary-font: #e767b0;
-  --color-secondary-font: rgb(247, 247, 247);
-}
-
 body {
   font-family: var(--font-title-text);
+  width: 100%;
+  height: 100%;
 }
 
 h1 {
+  color: var(--color-primary-font);
   font-family: var(--font-title-text);
   font-weight: 800;
-  line-height: 1.5;
-  font-size: 90px;
-  color: var(--color-primary-font);
+  line-height: 1.2;
+  font-size: 70px;
 }
 
-h2,
-h3 {
-  font-size: 36px;
+h2 {
+  font-family: var(--font-title-text);
+  font-weight: 600;
+  line-height: 1.2;
+  font-size: 70px;
   color: var(--color-secondary-font);
 }
 
-p {
-  padding: 30px 0px;
-  font-size: 18px;
-  line-height: 1.8;
-  text-align: justify;
-}
-
-.Homepage .heading {
-  background-color: var(--background-primary);
-  padding: 80px 60px;
+h3 {
+  font-size: 36px;
+  line-height: 1.5;
+  color: var(--color-secondary-font);
+  padding: 10px 0px;
   text-align: center;
 }
 
-.Homepage .heading .container-fluid .row {
-  background-color: var(--background-primary);
+.Homepage .heading {
+  background-color: var(--background-body);
+  padding: 0px 90px;
+  text-align: center;
 }
 
-.Homepage .heading .introdution {
-  margin-top: 220px;
+.Homepage .heading .intro {
+  margin-top: 40px;
 }
-.Homepage .heading .img-fluid {
-  border-radius: 20px;
-  padding: 12px auto;
-  margin-top: 60px;
-  width: fit-content;
-  height: 800px;
+
+.heading .img-fluid {
+  width: 250px;
+  height: 250px;
+  border-radius: 20%;
+  object-fit: cover;
+  margin-top: 40px;
+  box-shadow: 16px 13px 15px 0px rgba(138, 134, 134, 0.1);
 }
-.Homepage .headline {
-  font-weight: 700;
-  font-size: 23px;
+
+.heading .img-fluid img {
+  width: 100%;
+  height: auto;
 }
 
 .Homepage .btn-branding {
   font-family: var(--font-italic);
-  margin-top: 50px;
-  padding: 20px 25px;
+  margin-top: 30px;
+  padding: 15px 30px;
   background-color: var(--background-btn);
   color: var(--color-secondary-font);
-  border-radius: 4px;
+  border-radius: 5px;
   font-size: 20px;
   line-height: 30px;
+  margin-bottom: 180px;
 }
 
-.Homepage .btn:hover {
+/* .Homepage .btn:hover {
   color: var(--color-secondary-font);
+} */
+
+.scroll-downs {
+  position: absolute;
+  top: 85%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 34px;
+  height: 55px;
+}
+.mousey {
+  width: 3px;
+  padding: 10px 15px;
+  height: 35px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  opacity: 0.75;
+  box-sizing: content-box;
+}
+.scroller {
+  width: 3px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: #fff;
+  animation-name: scroll;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
+  animation-iteration-count: infinite;
+}
+@keyframes scroll {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(15px);
+    opacity: 0;
+  }
 }
 
-@media (max-width: 900px) {
+@media screen and (max-width: 960px) {
   h1 {
-    font-size: 44px;
-    line-height: 56px;
+    line-height: 1;
+    font-size: 40px;
   }
 
-  h2,
+  h2 {
+    line-height: 1;
+    font-size: 40px;
+  }
+
   h3 {
     font-size: 24px;
-    line-height: 1.2;
-  }
-  .Homepage .heading {
-    margin-top: -60px;
-    padding: 0px 15px 100px 15px;
+    line-height: 1.5;
+    padding: 10px 5px;
   }
 
-  .Homepage .heading .container-fluid {
-    border-radius: 10px;
-    width: fit-content !important;
-    height: fit-content !important;
+  .Homepage {
+    padding: 0px 0px;
+    margin: 0px 0px;
   }
-  .Homepage .heading .container-fluid .row {
-    background-color: var(--background-primary);
+
+  .heading .img-fluid {
+    width: 200px;
+    height: 200px;
   }
-  .btn-branding {
-    margin-top: 10px !important;
-    padding: 0px 10px;
+
+  .Homepage .btn-branding {
+    margin-bottom: 70px;
   }
-  .headline {
-    font-size: 12px !important;
-    margin: 2px;
-    padding: 5px 3px;
+
+  .scroll-downs {
+    opacity: 0;
   }
 }
