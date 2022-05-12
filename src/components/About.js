@@ -14,7 +14,9 @@ export default function About() {
         <div className="container-fluid">
           <div className="row">
             <div className="col-md-6">
-              <h3>This is me!</h3>
+              <h3>
+                <strong>This is me!</strong>
+              </h3>
               <p>
                 I am a Materials Engineer from Brazil, living in Germany, that
                 fell in love for the Front-End Developer world. I believe that
@@ -25,7 +27,7 @@ export default function About() {
                   rel="noopener noreferrer"
                 >
                   SheCodes Workshops
-                </a>{" "}
+                </a>
                 , all my certificates are available on my{" "}
                 <a
                   href="https://www.linkedin.com/in/keciasantos/"
@@ -49,7 +51,9 @@ export default function About() {
               </div>
             </div>
             <div className="col-md-6">
-              <h3>Skills</h3>
+              <h3>
+                <strong>Skills</strong>
+              </h3>
               <ul className="skills">
                 <li>HTML</li>
                 <li>CSS</li>

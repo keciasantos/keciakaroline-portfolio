@@ -1,12 +1,3 @@
-:root {
-  --font-title-text: "Nunito", sans-serif;
-  --font-italic: "Courgette", cursive;
-  --background-primary: #3f415a;
-  --background-body: #282a36;
-  --background-btn: #6a6577;
-  --color-primary-font: #e767b0;
-  --color-secondary-font: rgb(247, 247, 247);
-}
 .ExampleProjects .homepage {
   background-color: var(--background-body);
   padding: 50px 40px;
