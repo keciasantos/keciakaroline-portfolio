@@ -24,13 +24,15 @@ h3 {
   font-size: 36px;
   line-height: 1.5;
   color: var(--color-secondary-font);
-  padding: 10px 0px;
+  padding: 10px 70px;
   text-align: center;
 }
 
 .Homepage .heading {
   background-color: var(--background-body);
-  padding: 0px 90px;
+  padding: 0px 40px;
+  max-width: 100%;
+  margin: 0px 0px;
   text-align: center;
 }
 
@@ -69,8 +71,8 @@ h3 {
 } */
 
 .scroll-downs {
-  position: absolute;
-  top: 85%;
+  position: relative;
+  top: -100px;
   right: 0;
   bottom: 0;
   left: 0;
@@ -110,6 +112,10 @@ h3 {
     opacity: 0;
   }
 }
+/* @media screen and (max-width: 600px) {
+  .scroll-downs {
+  }
+} */
 
 @media screen and (max-width: 960px) {
   h1 {

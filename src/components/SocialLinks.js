@@ -1,6 +1,5 @@
 import React from "react";
 import "./SocialLinks.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function SocialLinks() {
   return (
@@ -12,7 +11,7 @@ export default function SocialLinks() {
           alt="email link"
           target="_blank"
         >
-          <i className="fa-solid fa-envelope"></i>
+          <i className="fa-solid fa-envelope fa-2x"></i>
         </a>
 
         <a
@@ -22,7 +21,7 @@ export default function SocialLinks() {
           alt="GitHub page"
           rel="noopener noreferrer"
         >
-          <i className="fa-brands fa-github-square"></i>
+          <i className="fa-brands fa-github-square fa-2x"></i>
         </a>
 
         <a
@@ -32,7 +31,7 @@ export default function SocialLinks() {
           alt="Linkedin page"
           rel="noopener noreferrer"
         >
-          <i className="fa-brands fa-linkedin"></i>
+          <i className="fa-brands fa-linkedin fa-2x"></i>
         </a>
 
         <a
@@ -41,7 +40,15 @@ export default function SocialLinks() {
           target="_blank"
           rel="noreferrer"
         >
-          <i className="fa-brands fa-xing-square"></i>
+          <i className="fa-brands fa-xing-square fa-2x"></i>
+        </a>
+        <a
+          href="https://twitter.com/kecia_karoline"
+          alt="Twitter page"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <i class="fa-brands fa-twitter-square fa-2x"></i>
         </a>
       </div>
     </>
