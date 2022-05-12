@@ -1,67 +1,52 @@
 import React from "react";
-import "./Contact.css";
+import "./SocialLinks.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-export default function Contact() {
+export default function SocialLinks() {
   return (
     <>
-      <div className="social-link">
-        <span>
-          <a
-            href="https://github.com/keciasantos"
-            target="_blank"
-            title="GitHub page - Kécia Santos"
-            alt="GitHub page"
-          >
-            <i class="fab fa-github-square"></i>
-          </a>{" "}
-          <a
-            href="https://www.linkedin.com/in/keciasantos/"
-            target="_blank"
-            title="Linkedin page - Kécia Santos"
-            alt="Linkedin page"
-          >
-            <i class="fab fa-linkedin"></i>
-          </a>
-        </span>
-
+      <div className="SocialLinks">
         <ul>
-          <li className="contact-link">
-            <h3>Email:</h3>
-            <a href="mailto:keciakaroline@gmail.com" alt="email link">
-              keciakaroline@gmail.com
+          <li>
+            <a
+              href="mailto:keciakaroline@gmail.com"
+              rel="noopener noreferrer"
+              alt="email link"
+              target="_blank"
+            >
+              <i className="fa-solid fa-envelope"></i>
             </a>
           </li>
-          <li className="contact-link">
-            <h3>XING:</h3>
+          <li>
+            <a
+              href="https://github.com/keciasantos"
+              target="_blank"
+              title="GitHub page - Kécia Santos"
+              alt="GitHub page"
+              rel="noopener noreferrer"
+            >
+              <i className="fa-brands fa-github-square"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/keciasantos/"
+              target="_blank"
+              title="Linkedin page - Kécia Santos"
+              alt="Linkedin page"
+              rel="noopener noreferrer"
+            >
+              <i className="fa-brands fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
             <a
               href="https://www.xing.com/profile/KeciaKaroline_RolimdosSantos"
               alt="XING page"
               target="_blank"
               rel="noreferrer"
             >
-              Kécia Santos
-            </a>
-          </li>
-          <li className="contact-link">
-            <h3>Linkedin:</h3>
-            <a
-              href="https://www.linkedin.com/in/keciasantos/"
-              alt="Linkedin page"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Kécia Santos
-            </a>
-          </li>
-          <li className="contact-link">
-            <h3>GitHub:</h3>
-            <a
-              href="https://github.com/keciasantos"
-              alt="GitHub page"
-              target="_blank"
-              rel="noreferrer"
-            >
-              keciasantos
+              <i className="fa-brands fa-xing-square"></i>
             </a>
           </li>
         </ul>
