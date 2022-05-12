@@ -1,6 +1,4 @@
 import React from "react";
-import Footer from "./Footer";
-import FooterContact from "./FooterContact";
 import "./About.css";
 import { HashLink } from "react-router-hash-link";
 
@@ -15,7 +13,7 @@ export default function About() {
         </h4>
         <div className="container-fluid">
           <div className="row">
-            <div className="col-6 col-sm-12">
+            <div className="col-md-6">
               <h3>This is me!</h3>
               <p>
                 I am a Materials Engineer from Brazil, living in Germany, that
@@ -50,7 +48,7 @@ export default function About() {
                 Contact
               </HashLink>
             </div>
-            <div className="col-6 col-sm-12">
+            <div className="col-md-6">
               <h3>Skills</h3>
               <ul className="skills">
                 <li>HTML</li>
@@ -69,9 +67,6 @@ export default function About() {
           </div>
         </div>
       </div>
-
-      <FooterContact />
-      <Footer />
     </div>
   );
 }

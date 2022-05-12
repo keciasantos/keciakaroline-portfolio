@@ -10,7 +10,7 @@ import project_4 from "../images/project_4.jpg";
 
 export default function Projects() {
   return (
-    <div className="Projects" id="projects">
+    <>
       <div class="content-container container-fluid">
         <div class="content">
           <h1 class="mb-5 text-center">
@@ -139,6 +139,6 @@ export default function Projects() {
 
       <FooterContact />
       <Footer />
-    </div>
+    </>
   );
 }

@@ -31,7 +31,7 @@ export default function Homepage() {
         </div>
       </div>
       <About />
-      <ExampleProjects />
+      <Projects />
       <FooterContact />
       <Footer />
     </div>

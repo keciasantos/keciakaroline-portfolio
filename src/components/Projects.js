@@ -1,18 +1,21 @@
 import React from "react";
-import project_1 from "../images/project_1.png";
+// import project_1 from "../images/project_1.png";
 import project_2 from "../images/project_2.png";
 import project_3 from "../images/project_3.png";
 import project_4 from "../images/project_4.png";
 import project_5 from "../images/project_5.png";
 import "./Projects.css";
 
-export default function ExampleProjects() {
+export default function Projects() {
   return (
-    <div className="ExampleProjects">
-      <div className="homepage" id="homepage">
+    <>
+      <div className="Projects" id="projects">
         <div className="container-fluid">
+          <h1>PROJECTS</h1>
+          <h4>Here you will find my personal and clients projects.</h4>
           <div className="row">
             <div className="col d-none d-lg-block">
+              <h2 className="mb-3">Weather App</h2>
               <img
                 src={project_2}
                 alt="project weather"
@@ -20,24 +23,20 @@ export default function ExampleProjects() {
                 title="This is my weather project"
               />
             </div>
-            <div className="col">
-              <div className="project-description">
-                <h2 className="mb-3">Weather App</h2>
-                <p className="mb-3">
-                  A live weather app build using React{" "}
-                  <i className="fab fa-react"></i>, where the user can get real
-                  time weather information worldwide.
-                </p>
-                <a
-                  href="https://react-weather-project-keciasantos.netlify.app/"
-                  className="btn btn-branding-outline"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  View project <i className="fas fa-long-arrow-alt-right"></i>
-                </a>
-              </div>
-            </div>
+            <button className="btn btn-branding-outline">
+              <a target="_blank" rel="noreferrer">
+                GitHub <i className="fas fa-long-arrow-alt-right"></i>
+              </a>
+            </button>
+            <button className="btn btn-branding-outline">
+              <a
+                href="https://react-weather-project-keciasantos.netlify.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Demo live <i className="fas fa-long-arrow-alt-right"></i>
+              </a>
+            </button>
           </div>
           <div className="row">
             <div className="col">
@@ -131,6 +130,6 @@ export default function ExampleProjects() {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
