@@ -40,13 +40,13 @@ export default function About() {
                 I'm open to <strong>Job</strong> opportunities where I can
                 contribute, learn and grow. If you have a good opportunity that
                 matches my skills and experience then don't hesitate to{" "}
-                <strong>contact</strong>
-                me.
+                <strong>contact</strong> me.
               </p>
-
-              <HashLink to="#contact" className="btn btn-branding">
-                Contact
-              </HashLink>
+              <div className="button">
+                <HashLink to="#contact" className="btn btn-branding">
+                  Contact
+                </HashLink>
+              </div>
             </div>
             <div className="col-md-6">
               <h3>Skills</h3>

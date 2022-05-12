@@ -1,17 +1,7 @@
-:root {
-  --font-title-text: "Nunito", sans-serif;
-  --font-italic: "Courgette", cursive;
-  --background-primary: #3f415a;
-  --background-body: #282a36;
-  --background-btn: #6a6577;
-  --color-primary-font: #e767b0;
-  --color-secondary-font: rgb(247, 247, 247);
-}
-
 .About .btn-branding {
   font-family: var(--font-italic);
   margin-top: 50px;
-  padding: 20px 25px;
+  padding: 15px 30px;
   background-color: var(--background-btn);
   color: var(--color-secondary-font);
   border-radius: 4px;
@@ -19,39 +9,74 @@
   line-height: 30px;
 }
 
+.button {
+  text-align: center;
+}
+
 .About .btn:hover {
   color: var(--color-secondary-font);
 }
 
-.About .profile {
-  border-radius: 20px;
+.About {
+  background-color: #cacbd0bd;
+  padding: 60px 40px 0px 40px;
+  max-width: 100%;
+  margin: 0px 0px;
 }
 
-.About .content {
-  margin: 50px;
+.About .about-me h1 {
+  text-align: center;
+  font-size: 50px;
+  line-height: 1.5;
+  text-decoration: underline;
+  letter-spacing: 7px;
 }
 
-.About .content-container {
-  padding: 160px 70px;
-  background-color: var(--background-body);
+.About .about-me h4 {
+  font-size: 26px;
+  color: var(--background-body);
+  text-align: center;
+  margin-top: 25px;
 }
 
-.About .content-container h1 {
-  font-size: 64px;
-  line-height: 80px;
-}
-.About .content-container h2 {
-  font-size: 32px;
+.About h3 {
+  margin-top: 30px;
   font-weight: 700;
-  color: var(--color-secondary-font);
+  font-size: 24px;
+  color: var(--background-body);
+  text-align: left;
+  padding-left: 0;
 }
 
-.About .content-container p {
-  font-size: 20px;
-  color: var(--color-secondary-font);
+.container-fluid {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 40px;
 }
 
-@media (max-width: 900px) {
+.container-fluid p {
+  text-align: justify;
+  text-justify: inter-word;
+  margin: 0;
+}
+.container-fluid ul {
+  padding-left: 0px;
+}
+
+.container-fluid a {
+  text-decoration: none;
+  color: var(--color-primary-font);
+}
+
+li {
+  text-align: justify;
+  text-justify: inter-word;
+  list-style-type: none;
+  display: inline-block;
+  padding-right: 7px;
+}
+
+@media screen and (max-width: 960px) {
   .About .btn-branding {
     margin-top: 25px;
     padding: 10px 15px;
