@@ -1,7 +1,7 @@
 import React from "react";
 import profile_1 from "../images/profile_1.jpg";
 import Projects from "./Projects";
-import FooterContact from "./FooterContact";
+import Contact from "./Contact";
 import "./Homepage.css";
 import Footer from "./Footer";
 import { HashLink } from "react-router-hash-link";
@@ -32,7 +32,7 @@ export default function Homepage() {
       </div>
       <About />
       <Projects />
-      <FooterContact />
+      <Contact />
       <Footer />
     </div>
   );
