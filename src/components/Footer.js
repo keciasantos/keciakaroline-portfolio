@@ -32,8 +32,8 @@ export default function Footer() {
             alt="GitHub page"
             rel="noopener noreferrer"
           >
-            <i class="fab fa-github-square"></i>
-          </a>{" "}
+            <i class="fa-brands fa-github-square"></i>
+          </a>
           <a
             href="https://www.linkedin.com/in/keciasantos/"
             target="_blank"
@@ -41,7 +41,23 @@ export default function Footer() {
             alt="Linkedin page"
             rel="noopener noreferrer"
           >
-            <i class="fab fa-linkedin"></i>
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a
+            href="https://www.xing.com/profile/KeciaKaroline_RolimdosSantos"
+            alt="XING page"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i className="fa-brands fa-xing-square"></i>
+          </a>
+          <a
+            href="https://twitter.com/kecia_karoline"
+            alt="Twitter page"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i class="fa-brands fa-twitter-square"></i>
           </a>
         </span>
       </div>
