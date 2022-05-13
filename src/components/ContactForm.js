@@ -1,13 +1,14 @@
 import React, { useRef } from "react";
 import "./ContactForm.css";
 import emailjs from "@emailjs/browser";
-import ReCAPTCHA from "react-google-recaptcha";
+// import ReCAPTCHA from "react-google-recaptcha";
 
 export default function ContactForm() {
   const form = useRef();
 
   const handleSubmit = (event) => {
     event.preventDefault();
+
     emailjs
       .sendForm(
         "service_dls8dul",
@@ -16,16 +17,25 @@ export default function ContactForm() {
         "TJN42Gc7yk7Gk6-RG"
       )
       .then(
-        ({ status }) => {
-          // show sucess message
+        function (response) {
+          console.log("SUCCESS!", response.status, response.text);
           alert("Thank you for your contact! I will reply as soon as possible");
           document.getElementById("form-name").reset();
         },
-        () => {
-          // show error message
-          alert("Please verify that you are a human.");
+        function (error) {
+          console.log("FAILED...", error);
         }
       );
+    //     ({ status }) => {
+    //       // show sucess message
+    //       alert("Thank you for your contact! I will reply as soon as possible");
+    //       document.getElementById("form-name").reset();
+    //     },
+    //     () => {
+    //       // show error message
+    //       alert("Please verify that you are a human.");
+    //     }
+    //   );
   };
 
   return (
@@ -52,19 +62,19 @@ export default function ContactForm() {
             <label>Message:</label>
             <br />
             <textarea name="message" id="message"></textarea>
-            <div>
+            {/* <div>
               <ReCAPTCHA
                 className="recaptcha"
                 sitekey="6LdT7jEfAAAAADT0pLJvphtSaR_NkbClcN3I__NO"
                 onChange={handleSubmit}
               />
-            </div>
+            </div> */}
             <button
               type="submit"
               name="submit"
               value="Send"
               className="form-btn btn-branding"
-              onSubmit={handleSubmit}
+              // onSubmit={handleSubmit}
               id="btn"
             >
               Send
