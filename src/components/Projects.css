@@ -29,10 +29,10 @@
 }
 
 .grid-project {
-  margin-bottom: 40px;
   display: flex;
   flex-wrap: wrap;
   position: relative;
+  margin-bottom: 0px;
 }
 
 .grid-project .grid-item {
@@ -67,23 +67,24 @@
   margin-top: 30px;
 }
 
-.grid-project .tags button {
+.grid-project .tags a {
   font-family: var(--font-italic);
   -webkit-align-items: center;
   align-items: center;
   text-align: center;
   display: inline-block;
-  background-color: var(--background-btn);
-  color: var(--color-secondary-font);
-  border-color: var(--background-btn);
-  border-radius: 5px;
-  box-shadow: 1px 1px 0 rgb(0 0 0 / 25%);
+  background-color: var(--background-primary);
+  color: var(--background-body);
+  /* border: none; */
   margin: 30px 5px 5px 5px;
   font-size: 20px;
 }
 
-.grid-project .tags button:hover {
-  color: var(--color-primary-font);
+.grid-project .tags a:hover {
+  /* color: var(--color-primary-font); */
+  font-weight: 800;
+  text-decoration: underline;
+  transition: all 150ms ease-in-out;
 }
 
 .Projects .container-fluid {
@@ -115,7 +116,6 @@
   }
 
   .grid-project {
-    margin-bottom: 20px;
     display: flex;
     flex-wrap: wrap;
     margin-left: 20px;
@@ -125,7 +125,6 @@
 
   .grid-project .grid-item {
     padding: 10px;
-    margin: 10px;
   }
 
   .grid-project .item-pic {

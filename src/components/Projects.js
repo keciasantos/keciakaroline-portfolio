@@ -26,22 +26,22 @@ export default function Projects() {
                 />
               </div>
               <div className="tags">
-                <button
+                <a
                   href="https://github.com/keciasantos/react-weather-project"
                   target="_blank"
                   rel="noreferrer"
-                  className="btn btn-branding"
+                  className="btn btn-branding-outline"
                 >
                   GitHub <i className="fas fa-long-arrow-alt-right"></i>
-                </button>
-                <button
+                </a>
+                <a
                   href="https://react-weather-project-keciasantos.netlify.app/"
                   target="_blank"
                   rel="noreferrer"
-                  className="btn btn-branding"
+                  className="btn btn-branding-outline"
                 >
                   Demo Live <i className="fas fa-long-arrow-alt-right"></i>
-                </button>
+                </a>
               </div>
             </>
           </li>
@@ -59,22 +59,22 @@ export default function Projects() {
                 />
               </div>
               <div className="tags">
-                <button
+                <a
                   href="https://github.com/keciasantos/react-dictionary-project"
                   target="_blank"
                   rel="noreferrer"
-                  className="btn btn-branding"
+                  className="btn btn-branding-outline"
                 >
                   GitHub <i className="fas fa-long-arrow-alt-right"></i>
-                </button>
-                <button
+                </a>
+                <a
                   href="https://react-dictionary-project.netlify.app/"
                   target="_blank"
                   rel="noreferrer"
-                  className="btn btn-branding"
+                  className="btn btn-branding-outline"
                 >
                   Demo Live <i className="fas fa-long-arrow-alt-right"></i>
-                </button>
+                </a>
               </div>
             </>
           </li>
@@ -92,32 +92,32 @@ export default function Projects() {
                 />
               </div>
               <div className="tags">
-                <button
+                <a
                   href="https://github.com/keciasantos/todo-app"
                   target="_blank"
                   rel="noreferrer"
-                  className="btn btn-branding"
+                  className="btn btn-branding-outline"
                 >
                   GitHub <i className="fas fa-long-arrow-alt-right"></i>
-                </button>
-                <button
+                </a>
+                <a
                   href="https://todo-app-keciasantos.netlify.app/"
                   target="_blank"
                   rel="noreferrer"
-                  className="btn btn-branding"
+                  className="btn btn-branding-outline"
                 >
                   Demo live <i className="fas fa-long-arrow-alt-right"></i>
-                </button>
+                </a>
                 <br />
-                <button
+                <a
                   href="https://www.frontendmentor.io/"
                   target="_blank"
                   rel="noreferrer"
-                  className="btn btn-branding"
+                  className="btn btn-branding-outline"
                 >
                   FrontEnd-Mentor{" "}
                   <i className="fas fa-long-arrow-alt-right"></i>
-                </button>
+                </a>
               </div>
             </>
           </li>
@@ -139,22 +139,22 @@ export default function Projects() {
                 />
               </div>
               <div className="tags">
-                <button
+                <a
                   href="https://github.com/keciasantos/yasminrolim-project"
                   target="_blank"
                   rel="noreferrer"
-                  className="btn btn-branding"
+                  className="btn btn-branding-outline"
                 >
                   GitHub <i className="fas fa-long-arrow-alt-right"></i>
-                </button>
-                <button
+                </a>
+                <a
                   href="https://yasminrolim-arquitetura.netlify.app/"
                   target="_blank"
                   rel="noreferrer"
-                  className="btn btn-branding"
+                  className="btn btn-branding-outline"
                 >
                   Demo live <i className="fas fa-long-arrow-alt-right"></i>
-                </button>
+                </a>
               </div>
             </>
           </li>

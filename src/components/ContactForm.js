@@ -19,6 +19,7 @@ export default function ContactForm() {
         ({ status }) => {
           // show sucess message
           alert("Thank you for your contact! I will reply as soon as possible");
+          document.getElementById("form-name").reset();
         },
         () => {
           // show error message
@@ -30,7 +31,7 @@ export default function ContactForm() {
   return (
     <div className="Contact" id="contact">
       <div className="container-fluid ContactForm">
-        <form ref={form} onSubmit={handleSubmit}>
+        <form ref={form} onSubmit={handleSubmit} id="form-name">
           <h1>CONTACT</h1>
           <h4>
             Feel free to complete the contact form below and I will get back to
@@ -40,28 +41,31 @@ export default function ContactForm() {
           <div>
             <label>Name:</label>
             <br />
-            <input type="text" name="user_name"></input>
+            <input type="text" name="user_name" id="name"></input>
           </div>
           <div>
             <label>Email:</label>
             <br />
-            <input type="email" name="user_email"></input>
+            <input type="email" name="user_email" id="email"></input>
           </div>
           <div>
             <label>Message:</label>
             <br />
-            <textarea name="message"></textarea>
-            <ReCAPTCHA
-              className="recaptcha"
-              sitekey="6LdT7jEfAAAAADT0pLJvphtSaR_NkbClcN3I__NO"
-              onChange={handleSubmit}
-            />
+            <textarea name="message" id="message"></textarea>
+            <div>
+              <ReCAPTCHA
+                className="recaptcha"
+                sitekey="6LdT7jEfAAAAADT0pLJvphtSaR_NkbClcN3I__NO"
+                onChange={handleSubmit}
+              />
+            </div>
             <button
               type="submit"
               name="submit"
               value="Send"
               className="form-btn btn-branding"
               onSubmit={handleSubmit}
+              id="btn"
             >
               Send
             </button>
