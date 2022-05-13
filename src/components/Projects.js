@@ -27,7 +27,7 @@ export default function Projects() {
               </div>
               <div className="tags">
                 <button
-                  href="/"
+                  href="https://github.com/keciasantos/react-weather-project"
                   target="_blank"
                   rel="noreferrer"
                   className="btn btn-branding"
@@ -60,7 +60,7 @@ export default function Projects() {
               </div>
               <div className="tags">
                 <button
-                  href="/"
+                  href="https://github.com/keciasantos/react-dictionary-project"
                   target="_blank"
                   rel="noreferrer"
                   className="btn btn-branding"
@@ -93,7 +93,7 @@ export default function Projects() {
               </div>
               <div className="tags">
                 <button
-                  href="/"
+                  href="https://github.com/keciasantos/todo-app"
                   target="_blank"
                   rel="noreferrer"
                   className="btn btn-branding"
@@ -108,13 +108,15 @@ export default function Projects() {
                 >
                   Demo live <i className="fas fa-long-arrow-alt-right"></i>
                 </button>
+                <br />
                 <button
                   href="https://www.frontendmentor.io/"
                   target="_blank"
                   rel="noreferrer"
                   className="btn btn-branding"
                 >
-                  FrontEnd-Mentor
+                  FrontEnd-Mentor{" "}
+                  <i className="fas fa-long-arrow-alt-right"></i>
                 </button>
               </div>
             </>
@@ -122,7 +124,11 @@ export default function Projects() {
           <li className="grid-item">
             <>
               <div className="item-title">
-                <h2>Portfolio - Yasmin Rolim</h2>
+                <h2>
+                  Yasmin Rolim
+                  <br />
+                  Portfolio
+                </h2>
               </div>
               <div className="item-pic">
                 <img
@@ -132,22 +138,24 @@ export default function Projects() {
                   title="Yasmin Rolim Portfolio"
                 />
               </div>
-              <button
-                href="/"
-                target="_blank"
-                rel="noreferrer"
-                className="btn btn-branding"
-              >
-                GitHub <i className="fas fa-long-arrow-alt-right"></i>
-              </button>
-              <button
-                href="https://yasminrolim-arquitetura.netlify.app/"
-                target="_blank"
-                rel="noreferrer"
-                className="btn btn-branding"
-              >
-                Demo live <i className="fas fa-long-arrow-alt-right"></i>
-              </button>
+              <div className="tags">
+                <button
+                  href="https://github.com/keciasantos/yasminrolim-project"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="btn btn-branding"
+                >
+                  GitHub <i className="fas fa-long-arrow-alt-right"></i>
+                </button>
+                <button
+                  href="https://yasminrolim-arquitetura.netlify.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="btn btn-branding"
+                >
+                  Demo live <i className="fas fa-long-arrow-alt-right"></i>
+                </button>
+              </div>
             </>
           </li>
         </ul>
