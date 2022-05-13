@@ -1,17 +1,7 @@
-:root {
-  --font-title-text: "Nunito", sans-serif;
-  --font-italic: "Courgette", cursive;
-  --background-primary: #3f415a;
-  --background-body: #282a36;
-  --background-btn: #6a6577;
-  --color-primary-font: #e767b0;
-  --color-secondary-font: rgb(247, 247, 247);
-}
-
 .navbar {
-  font-size: 20px;
+  font-size: 24px;
   background-color: var(--color-secondary-font) !important;
-  height: 60px;
+  height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,7 +15,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 80px;
+  height: 90px;
 }
 
 .main-container {
@@ -92,14 +82,14 @@
 
 @media screen and (max-width: 960px) {
   .nav-logo {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .nav-menu {
-    font-size: 16px;
+    font-size: 18px;
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: 40%;
     position: absolute;
     top: 105%;
     left: 0px;

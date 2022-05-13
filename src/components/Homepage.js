@@ -1,45 +1,53 @@
 import React from "react";
 import profile_1 from "../images/profile_1.jpg";
-import ExampleProjects from "./ExampleProjects";
-import FooterContact from "./FooterContact";
+import Projects from "./Projects";
+import ContactForm from "./ContactForm";
 import "./Homepage.css";
 import Footer from "./Footer";
 import { HashLink } from "react-router-hash-link";
+import About from "./About";
+import SocialLinks from "./SocialLinks";
 
 export default function Homepage() {
   return (
     <div className="Homepage">
-      <div className="heading">
+      <section className="heading text-center">
         <div className="container-fluid">
-          <div className="row">
-            <div className="col introdution">
-              <h2>Hi, I am</h2>
-              <h1>Kécia Santos</h1>
-              <h3 className="font-text mb-5">
-                {" "}
-                <span
-                  className="iconify-inline"
-                  data-icon="emojione-v1:flag-for-brazil"
-                ></span>{" "}
-                Brazilian Front-end developer 👩‍💻 based in Europe
-              </h3>
-
-              <HashLink to="#homepage" className="btn btn-branding">
-                Get started!
-              </HashLink>
-            </div>
-            <div className="col d-none d-lg-block">
-              <img src={profile_1} alt="Kécia Santos" className="img-fluid" />
+          <div>
+            <img src={profile_1} alt="Kécia Santos" className="img-fluid" />
+          </div>
+          <div className="intro">
+            <h2>Hey, I'm </h2>
+            <h1>Kécia Santos</h1>
+            <h3>
+              A Frontend focused on Web Developer building the Frontend of
+              Websites and Web Applications
+            </h3>
+            <HashLink to="#projects" className="btn btn-branding">
+              Projects
+            </HashLink>
+          </div>
+          <div className="scroll-downs">
+            <div className="mousey">
+              <div className="scroller"></div>
             </div>
           </div>
         </div>
-      </div>
-      <p class="headline text-center m-4">
-        A little show about my featured projects until now
-      </p>
-      <ExampleProjects />
-      <FooterContact />
-      <Footer />
+
+        <SocialLinks />
+      </section>
+      <section>
+        <About />
+      </section>
+      <section>
+        <Projects />
+      </section>
+      <section>
+        <ContactForm />
+      </section>
+      <section>
+        <Footer />
+      </section>
     </div>
   );
 }

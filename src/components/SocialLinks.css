@@ -1,23 +1,38 @@
-:root {
-  --font-title-text: "Nunito", sans-serif;
-  --font-italic: "Courgette", cursive;
-  --background-primary: #3f415a;
-  --background-body: #282a36;
-  --background-btn: #6a6577;
-  --color-primary-font: #e767b0;
-  --color-secondary-font: rgb(247, 247, 247);
+.SocialLinks {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%);
+  background: var(--color-secondary-font);
+  box-shadow: rgb(100 100 111 / 20%) 0 7px 29px 0;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 0px;
 }
 
+.SocialLinks .fa-solid,
+.SocialLinks .fa-brands {
+  height: 60px;
+  color: var(--color-primary-font);
+  opacity: 0.7;
+}
+
+.SocialLinks .fa-solid:hover,
+.SocialLinks .fa-brands:hover {
+  opacity: 1;
+}
+
+@media screen and (max-width: 960px) {
+  .SocialLinks {
+    display: none;
+  }
+}
+/* 
 .Contact .content-container {
   padding: 80px 70px;
   background-color: var(--background-body);
 }
-.Contact .content-container h1 {
-  font-size: 64px;
-  line-height: 80px;
-  text-align: center;
-  margin-bottom: 60px;
-}
+
 
 .Contact .contact-link {
   border-radius: 20px;
@@ -61,4 +76,4 @@
     width: 220px;
     height: 110px;
   }
-}
+} */

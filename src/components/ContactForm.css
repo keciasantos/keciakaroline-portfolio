@@ -1,14 +1,27 @@
-.contact-icon {
-  transform: rotate(45deg);
-  width: 25px;
-  height: 25px;
-  padding-left: 3px;
-  margin-left: 5px;
-  margin-bottom: 10px;
+.Contact {
+  background-color: var(--background-body);
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 40px;
+}
+
+form h1 {
+  text-align: center;
+  font-size: 50px;
+  line-height: 1.5;
+  text-decoration: underline;
+  letter-spacing: 7px;
+}
+
+form h4 {
+  font-size: 26px;
+  color: var(--color-secondary-font);
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 50px;
 }
 
 .ContactForm {
-  box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -16,23 +29,14 @@
 }
 
 form {
-  background-color: var(--background-primary);
   color: var(--color-secondary-font);
   font-family: var(--font-title-text);
   display: flex;
   flex-direction: column;
-  margin: 0px 20px;
-  padding: 0px 30px;
-  border-radius: 20px;
+  margin: 0px 0px;
+  padding: 0px 0px;
   width: 100%;
-  max-width: 600px;
-}
-
-form h2 {
-  font-weight: bold;
-  color: var(--color-primary-font);
-  text-align: center;
-  margin: 40px 10px;
+  max-width: 700px;
 }
 
 form input,
@@ -41,43 +45,60 @@ form textarea {
   margin: 10px 0;
   padding: 10px;
   outline: none;
-  font-size: 20px;
+  font-size: 18px;
   width: 100%;
 }
 
 .btn-branding {
   font-family: var(--font-italic);
-  margin-top: 50px;
+  -webkit-align-items: center;
+  align-items: center;
+  text-align: center;
+  display: inline-block;
+  border: none;
+  font-size: 20px;
   padding: 15px 30px;
   background-color: var(--background-btn);
   color: var(--color-secondary-font);
   border-radius: 4px;
-  font-size: 20px;
-  line-height: 20px;
   margin-bottom: 30px;
   margin-top: 20px;
 }
 
-@media (max-width: 900px) {
-  form {
-    display: flex;
-    flex-direction: column;
-    margin: 0px auto;
-    padding: 30px 20px 20px 20px;
+.btn-branding:hover {
+  color: var(--color-primary-font);
+}
+
+@media screen and (max-width: 960px) {
+  .Contact {
+    padding: 0px 0px;
+    margin: 0px 0px;
+    padding-top: 40px;
   }
 
-  form h2 {
-    margin: 0px 10px 15px 10px;
+  form h1 {
+    line-height: 1;
+    font-size: 40px;
+  }
+
+  form h4 {
+    font-size: 20px;
+    line-height: 1.5;
+    padding: 10px 5px;
   }
 
   form input,
   form textarea {
-    margin: 7px 0px;
-    font-size: 14px;
-    width: 100%;
+    font-size: 16px;
   }
+
+  .btn-branding {
+    margin: 20px 5px 5px 5px;
+    font-size: 16px;
+  }
+
   .recaptcha {
-    margin: 10px 0px;
+    margin: 0px 0px;
     width: 150px !important;
   }
 }

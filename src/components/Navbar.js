@@ -13,7 +13,7 @@ export default function Navbar() {
       <div className={click ? "main-container" : ""} onClick={() => Close()} />
       <nav className="navbar" onClick={(e) => e.stopPropagation()}>
         <div className="nav-container">
-          <span className="nav-logo">Kécia Santos</span>
+          <span className="nav-logo">Kécia Karoline</span>
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
               <NavLink
@@ -26,17 +26,6 @@ export default function Navbar() {
                 Home
               </NavLink>
             </li>
-            {/* <li className="nav-item">
-              <NavLink
-                exact
-                to="/projects"
-                className="nav-link"
-                onClick={click ? handleClick : null}
-                activeClassName="active"
-              >
-                Projects
-              </NavLink>
-            </li> */}
             <li className="nav-item">
               <NavLink
                 exact
@@ -48,6 +37,18 @@ export default function Navbar() {
                 About
               </NavLink>
             </li>
+            <li className="nav-item">
+              <NavLink
+                exact
+                to="/projects"
+                className="nav-link"
+                onClick={click ? handleClick : null}
+                activeClassName="active"
+              >
+                Projects
+              </NavLink>
+            </li>
+
             <li className="nav-item">
               <NavLink
                 exact
