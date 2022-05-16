@@ -124,11 +124,7 @@ export default function Projects() {
           <li className="grid-item">
             <>
               <div className="item-title">
-                <h2>
-                  Yasmin Rolim
-                  <br />
-                  Portfolio
-                </h2>
+                <h2>Yasmin Rolim - Portfolio</h2>
               </div>
               <div className="item-pic">
                 <img

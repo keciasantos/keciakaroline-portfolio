@@ -14,6 +14,7 @@ export default function Navbar() {
       <nav className="navbar" onClick={(e) => e.stopPropagation()}>
         <div className="nav-container">
           <span className="nav-logo">Kécia Karoline</span>
+
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
               <NavLink
@@ -59,6 +60,16 @@ export default function Navbar() {
               >
                 Contact
               </NavLink>
+            </li>
+            <li className="nav-item cv">
+              <a
+                href="https://drive.google.com/file/d/1Uct9xz1UF6LPkLFyLwMUCEmti1gnW4qb/view?usp=sharing"
+                download
+                target="_blank"
+                rel="noreferrer"
+              >
+                Resume
+              </a>
             </li>
           </ul>
           <div className="nav-icon" onClick={handleClick}>
