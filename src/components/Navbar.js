@@ -63,7 +63,7 @@ export default function Navbar() {
             </li>
             <li className="nav-item cv">
               <a
-                href="https://drive.google.com/file/d/1_uLUzTgVyXqw-heplJeYME7wI3L5pcvy/view?usp=sharingf"
+                href="https://drive.google.com/file/d/1_uLUzTgVyXqw-heplJeYME7wI3L5pcvy/view?usp=sharing"
                 download
                 target="_blank"
                 rel="noreferrer"
