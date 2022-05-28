@@ -18,17 +18,17 @@ export default function About() {
 								<strong>This is me!</strong>
 							</h3>
 							<p>
-								I am a Materials Engineer from Brazil, living in Germany, that
-								fell in love for the Front-End Developer world. I believe that
-								teamwork contributes to archive better results. I did the{" "}
+								I am a Materials Engineer that fell in love with the web
+								developer Frontend world. I finished a coding Bootcamp{" "}
 								<a
 									href="https://www.shecodes.io/"
 									target="_blank"
 									rel="noopener noreferrer"
 								>
-									SheCodes Workshops
+									SheCodes.io
 								</a>
-								, all my certificates are available on my{" "}
+								, including real-life projects, all my certificates are
+								available on my{" "}
 								<a
 									href="https://www.linkedin.com/in/keciasantos/"
 									target="_blank"
@@ -37,6 +37,11 @@ export default function About() {
 									Linkedin
 								</a>
 								, fell free to connect with me.
+							</p>
+							<p>
+								As a junior developer, I am constantly tailoring myself to
+								better work, studying new techs and looking for opportunities. I
+								believe in teamwork and always try to contribute to improvement.
 							</p>
 							<p>
 								I'm open to <strong>Job</strong> opportunities where I can
